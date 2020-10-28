@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: library-management-system
+  datasource:
+    url: jdbc:mysql://localhost/library_data
+    username: root
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57InnoDBDialect
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+
+library-config:
+  fine-per-day: 10
